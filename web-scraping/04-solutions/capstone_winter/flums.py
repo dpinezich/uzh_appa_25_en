@@ -14,7 +14,6 @@ live_items = soup.find_all("li", class_="live-infos__item")
 slopes = live_items[0]
 temperature = live_items[2]
 
-
 # print(slopes)
 # print(temperature)
 

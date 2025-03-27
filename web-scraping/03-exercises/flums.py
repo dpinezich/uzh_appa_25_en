@@ -9,16 +9,19 @@ html_page = urlopen(base_url + "/Winter")
 html_text = html_page.read().decode("utf-8")
 
 soup = BeautifulSoup(html_text, "html.parser")
-live_items = soup.find_all("li", class_="live-infos__item")
+# todo add the correct class
+live_items = soup.find_all("li", class_="....????")
 
-slopes = live_items[0]
-temperature = live_items[2]
+# todo get slopes and temperature
+#slopes =
+#temperature =
 
 #print(slopes)
 #print(temperature)
 
-def clean_and_print_data(soup_element):
-    print(soup_element.find("span", class_="live-infos__item-text").get_text().strip())
+#def clean_and_print_data(soup_element):
+    # todo write a function that cleans and strips
 
-clean_and_print_data(slopes)
-clean_and_print_data(temperature)
+# todo uncomment when ready
+#clean_and_print_data(slopes)
+#clean_and_print_data(temperature)

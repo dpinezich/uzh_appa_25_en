@@ -10,7 +10,7 @@ soup = BeautifulSoup(html, "html.parser")
 
 # first level
 # <button class="sc-7a96f06e-5 ijhpDf"><span aria-label="2199 CHF">2199.–</span></button>
-price = soup.find("button", class_="sc-7a96f06e-5 ijhpDf")
+price = soup.find("button", class_="?????")
 print(price)
 
 # second, third level

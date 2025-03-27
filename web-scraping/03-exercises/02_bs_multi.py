@@ -7,6 +7,7 @@ html_text = html_page.read().decode("utf-8")
 
 soup = BeautifulSoup(html_text, "html.parser")
 
+# todo write an iteration to get all profiles
 print(soup)
 
 # should print out:
